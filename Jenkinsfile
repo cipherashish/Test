@@ -7,7 +7,8 @@ pipeline{
 stage ('build and install'){
             steps{
                 sh "mvn clean install "
-		sh "java -jar Avan-0.0.1-SNAPSHOT.jar"
+		 
+		sh "cd target;java -jar Avan-0.0.1-SNAPSHOT.jar;"
             }
 			 }
 			   }
